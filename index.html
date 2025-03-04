@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the web page -->
+    <title>To-Do List App</title>
+
+    <!-- External stylesheet link for custom styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome for icons (e.g., plus, edit, check, trash) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Main heading for the to-do list app -->
+        <h1>To-Do List</h1>
+
+        <!-- Section for adding new tasks -->
+        <div class="input-section">
+            <!-- Input field for typing in a new task -->
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            
+            <!-- Button for adding the task (includes a plus icon from Font Awesome) -->
+            <button id="add-task-btn"><i class="fas fa-plus"></i></button>
+        </div>
+
+        <!-- Unordered list to display tasks -->
+        <ul id="task-list"></ul>
+    </div>
+
+    <!-- External script file for the app's functionality -->
+    <script src="script.js"></script>
+</body>
+</html>

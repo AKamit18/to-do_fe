@@ -1,0 +1,159 @@
+/* General Reset for all elements to remove default margin, padding, and ensure consistent box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with a background gradient, center alignment, and font settings */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Main container styling with padding, rounded corners, shadow, and animation */
+.container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade-in animation for the container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Input section styling (flexbox layout to align input and button) */
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Task input field styling (size, padding, border, focus state) */
+#task-input {
+    width: 75%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Task input field focus state styling */
+#task-input:focus {
+    border-color: #667eea;
+}
+
+/* Add task button styling (background color, padding, hover effect) */
+#add-task-btn {
+    padding: 12px 20px;
+    background-color: #667eea;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for add task button */
+#add-task-btn:hover {
+    background-color: #5a6fd1;
+}
+
+/* Task list styling (removes bullet points) */
+#task-list {
+    list-style-type: none;
+}
+
+/* Individual task item styling (flex layout, padding, background color) */
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    animation: slideIn 0.3s ease-in-out;
+}
+
+/* Slide-in animation for tasks when added */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Styling for completed tasks (strikethrough and greyed out background) */
+.task-item.completed {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #e0e0e0;
+}
+
+/* Styling for task actions (buttons for complete, edit, delete) */
+.task-item .task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Styling for task action buttons (no borders, font size, hover effects) */
+.task-item .task-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Hover effect for task action buttons */
+.task-item .task-actions button:hover {
+    transform: scale(1.1);
+}
+
+/* Individual task action button colors (complete, edit, delete) */
+.task-item .task-actions .complete-btn {
+    color: #28a745;
+}
+
+.task-item .task-actions .edit-btn {
+    color: #ffc107;
+}
+
+.task-item .task-actions .delete-btn {
+    color: #dc3545;
+}

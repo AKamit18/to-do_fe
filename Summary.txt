@@ -1,0 +1,17 @@
+                                                    To-Do List App:-
+
+This project is a simple To-Do List web application built using HTML, CSS, and JavaScript. The app allows users to add, edit, mark as complete, and delete tasks.
+
+                                                    Key Features:
+
+- Adding Tasks:
+Users can add a task by typing in the input field and clicking the "Add Task" button (plus icon).
+
+- Completing Tasks:
+Tasks can be marked as completed by clicking the check icon, which applies a strike through effect.
+
+- Editing Tasks:
+Users can edit a task by clicking the edit button (pencil icon) and modifying the task text.
+
+- Deleting Tasks:
+Tasks can be removed by clicking the delete button (trash icon), which animates the task removal with a fade-out effect.
